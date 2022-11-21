@@ -1,13 +1,17 @@
 import Header from './compornents/head'
 import Search from './compornents/search'
-import List from './compornents/list'
+import ListType from './compornents/listType'
+import BookList from './compornents/booklist'
+import BootomUtil from './compornents/underbar'
 
 function App() {
   return (
     <div className="App">
         <Header />
         <Search />
-        <List />
+        <ListType />
+        <BookList />
+        <BootomUtil />
     </div>
   );
 }

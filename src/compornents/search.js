@@ -1,11 +1,11 @@
 
 import styled from 'styled-components'
-
+import { SearchOutlined,CloseCircleOutlined } from '@ant-design/icons';
 
 const SearchWrap = styled.div`
     border-top:1px solid #ccc;
     border-bottom:1px solid #f7f7f7;
-    padding:calc(25 / 750 * 100vw) 16px calc(15 / 750 * 100vw);;
+    padding:calc(25 / 750 * 100vw) 16px;
     display:flex;
     background:#eeeeee;
     
@@ -26,13 +26,17 @@ function Search() {
        <form>
             <SearchWrap>
                 <input type="text" />
-                <button type="button">
-                   {/* <CircumIcon 
-                    name="search" 
-                    color="#000" 
-                    className="searchIcon"
-                    >
-                   </CircumIcon> */}
+                <button 
+                type='button'
+                > 
+                  <span className='ir-text'>삭제</span>
+                  <CloseCircleOutlined />
+                </button>
+                <button type="button"
+                  className='searchIcon'
+                >
+                    <SearchOutlined />
+                    <span className='ir-text'>검색</span>
                 </button>                
             </SearchWrap>
        </form>
