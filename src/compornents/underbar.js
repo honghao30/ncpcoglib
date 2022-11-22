@@ -1,6 +1,6 @@
 
 import styled from 'styled-components'
-// import { UnorderedListOutlined,AppstoreOutlined } from '@ant-design/icons';
+import { BarsOutlined,HddOutlined,HomeOutlined,PlayCircleOutlined,BulbOutlined } from '@ant-design/icons';
 
 const BoomUtilWrap = styled.div`
     position:fixed;
@@ -10,27 +10,39 @@ const BoomUtilWrap = styled.div`
     left:0;
     bottom:0;
     width:100%;
-    height:50px;
+    height:60px;
+    background-color:#f0f1f1;
+    button {
+        color:#37434b;
+        font-size:25px;
+    }
+
 `;
 
 
 function BootomUtil() {
   return (
     <BoomUtilWrap>
+        
         <button type='button'>
-            목록
+            <BarsOutlined />
+            <span className="ir-text">목록</span>
         </button>
         <button type='button'>
-            원본파일
+            <HddOutlined />
+            <span className="ir-text">원본파일</span>
         </button>  
         <button type='button'>
-            홈으로
+            <HomeOutlined />
+            <span className="ir-text">홈으로</span>            
         </button>          
         <button type='button'>
-            오디오
+            <PlayCircleOutlined />
+            <span className="ir-text">오디오</span> 
         </button>        
         <button type='button'>
-            다크모드
+            <BulbOutlined />
+            <span className="ir-text">다크모드</span>            
         </button>        
        
     </BoomUtilWrap>
